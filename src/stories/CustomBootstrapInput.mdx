@@ -1,0 +1,84 @@
+import { Canvas, Meta,Controls } from '@storybook/blocks';
+
+import * as CustomBootstrapInput from './CustomBootstrapInput.stories.tsx';
+
+<Meta of={CustomBootstrapInput} />
+
+# CustomBootstrap
+
+This is an example how CustomBootstrapInput is working.
+
+## Possible Options for HeaderFive
+
+```ts
+
+type CustomBootstrapInputProps = {
+    type?: string
+    floating_container_class?: string
+    input_id: string
+    value?: string | number | null
+    label: string
+    placeholder: string
+    input_class?: string
+    accept?: string
+    alt?: string
+    capture?: string
+    autoComplete?: string
+    autoFocus?: boolean
+    disabled?: boolean
+    height?: string
+    list?: any
+    max?: number
+    maxLength?: number
+    min?: number
+    minLength?: number
+    multiple?: boolean
+    name?: string
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onChangeCapture?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onInput?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onInputCapture?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onInvalid?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onInvalidCapture?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onSelect?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onSelectCapture?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    pattern?: string
+    readOnly?: boolean
+    required?: boolean
+    size?: number
+    src?: string
+    step?: number
+    width?: string
+}
+
+```
+
+# Examples
+
+## Custom Bootstrap Number Input
+<Canvas of={CustomBootstrapInput.CustomBootstrapInputOne} />
+
+
+<Controls of={CustomBootstrapInput.CustomBootstrapInputOne} />
+
+
+## Custom Bootstrap Text Input
+<Canvas of={CustomBootstrapInput.CustomBootstrapTextInput} />
+
+
+<Controls of={CustomBootstrapInput.CustomBootstrapTextInput} />
+
+## Custom Bootstrap Without value
+
+<Canvas of={CustomBootstrapInput.CustomBootstrapTextInputWithoutValue} />
+
+
+<Controls of={CustomBootstrapInput.CustomBootstrapTextInputWithoutValue} />
+
+
+## Custom Bootstrap readOnly
+
+<Canvas of={CustomBootstrapInput.CustomBootstrapReadOnly} />
+
+
+<Controls of={CustomBootstrapInput.CustomBootstrapReadOnly} />

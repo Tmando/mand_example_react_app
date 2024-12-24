@@ -1,0 +1,51 @@
+.custom-bootstrap {
+    @import "../node_modules/bootstrap/scss/bootstrap.scss";
+    .form-floating .form-control {
+        background-color: rgba(0, 0, 0, 0.05) !important;
+        box-shadow: none;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
+      
+      .form-floating label {
+        border: none;
+        border-radius: 0;
+      }
+      
+      .form-floating>input+label:after {
+        background-color: rgba(0, 0, 0, 0) !important;
+      }
+      
+      .custom_form_floating {
+        margin-bottom: 1.5% !important;
+      }
+      .table_row{
+        margin-top: 3%;
+      }
+      
+      .col_label{
+          font-weight: bold;
+          text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.6);
+          font-size: 1.5em;
+          color: #018749 !important;
+          word-break: break-all !important;
+      }
+      .col_result{
+        text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.6);
+          font-size: 1.5em;
+          color: #018749 !important;
+          word-break: break-all !important;
+      }
+      .custom_table_class{
+        table-layout: fixed !important;
+      }
+      .custom_input{
+        margin-bottom: 1.5%;
+      }
+}
+
+:root * {
+    @extend :root;
+}

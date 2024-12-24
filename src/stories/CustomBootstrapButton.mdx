@@ -1,0 +1,37 @@
+import { Canvas, Meta,Controls } from '@storybook/blocks';
+
+import * as CustomBootstrapButton from './CustomBootstrapButton.stories.tsx';
+
+<Meta of={CustomBootstrapButton} />
+
+# CustomBootstrap
+
+This is an example how CustomBootstrapButton is working.
+
+## Possible Options for HeaderFive
+
+```ts
+
+type ButtonProps = {
+    label?: string
+    class?: string
+    disabled?: boolean
+    id?: string
+    onClick?:(e: React.MouseEvent<HTMLButtonElement>) => void
+}
+
+```
+
+# Examples
+
+## Custom Button One Example
+<Canvas of={CustomBootstrapButton.CustomBootstrapButtonStoryOne} />
+
+
+<Controls of={CustomBootstrapButton.CustomBootstrapButtonStoryOne} />
+
+## Custom Bootstrap Button Disabled
+<Canvas of={CustomBootstrapButton.CustomBootstrapButtonDisabled} />
+
+
+<Controls of={CustomBootstrapButton.CustomBootstrapButtonDisabled} />
