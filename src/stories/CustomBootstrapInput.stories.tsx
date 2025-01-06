@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CustomBootstrapInput } from '../components/helpers/CustomBootstrapInput';
+import { BootstrapInput } from '../components/helpers/BootstrapInput';
 
 const meta = {
   title: 'Components/helpers/CustomBootstrapInput',
-  component: CustomBootstrapInput,
+  component: BootstrapInput,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
@@ -12,7 +12,7 @@ const meta = {
   argTypes: {
 
   }
-} satisfies Meta<typeof CustomBootstrapInput>;
+} satisfies Meta<typeof BootstrapInput>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
